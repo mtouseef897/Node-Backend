@@ -4,10 +4,10 @@ const app = express()
 const port = 3000
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.json({message:"Welcome to SmartWebHouse Backend"})
 })
 
-app.get('/profile',(req,res)=>{res.send("<h1>I am Touseef</h1> <p>A Full Stack Web Developer</p>")})
+app.get('/profile',(req,res)=>{res.json({name:"Touseef",profession:"web developer"})})
 app.listen(process.env.PORT, () => {
   console.log(`Example app listening on port ${process.env.PORT}`)
 })
