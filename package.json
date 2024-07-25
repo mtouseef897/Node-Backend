@@ -3,13 +3,18 @@
   "version": "1.0.0",
   "description": "basic app to deploy",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon src/index.js"
   },
   "author": "touseef",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.4.5",
     "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4",
+    "prettier": "^3.3.3"
   }
 }
